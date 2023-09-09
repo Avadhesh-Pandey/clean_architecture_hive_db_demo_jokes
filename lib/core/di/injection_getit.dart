@@ -6,7 +6,7 @@ import 'package:jokes/features/data/datasource/remote/network/api_services.dart'
 import 'package:jokes/features/data/repositories/jokes_repository_impl.dart';
 import 'package:jokes/features/domain/repositories/jokes_repository.dart';
 import 'package:jokes/features/domain/usecases/jokes_usecase.dart';
-import 'package:jokes/features/presentation/bloc/auth_status/jokes_bloc.dart';
+import 'package:jokes/features/presentation/bloc/get_jokes_bloc/jokes_bloc.dart';
 
 final sl = GetIt.instance;
 
