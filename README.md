@@ -1,6 +1,30 @@
-# jokes
+# Demo Jokes application (Android, iOS & Web) - Clean Architecture approach 
 
 Jokes are a form of humour, but not all humour is in the form of a joke
+This is a sample project using clean architecture, Dio, Hive & Bloc
+
+
+## Packages
+
+| Purpose           | Library               |
+| ---------         | -------               |
+| State management  |  Bloc                 |
+| Data - Local      |  Hive                 |
+| Data - Remote     |  Dio                  |
+| DI                |  Get it               |
+| Responsive UI     |  Screen Utils         |
+
+## Screens
+
+- Home
+
+ 
+## Project Architecture
+
+The project is built using clean architecture. It has 2 main directories
+
+- core
+- features
 
 ## Getting Started
 
