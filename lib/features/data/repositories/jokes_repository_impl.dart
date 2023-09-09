@@ -19,7 +19,7 @@ class JokesRepositoryImpl implements JokesRepository {
     try {
       var response = await remoteDataSource.getTheJoke();
       await localDataSource.saveTheJoke(response);
-      var cachedJokes=await localDataSource.getCachedJokes();
+      var cachedJokes = await localDataSource.getCachedJokes();
       return right(cachedJokes);
     } catch (e) {
       throw APIFailure("API failure");

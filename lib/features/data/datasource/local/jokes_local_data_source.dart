@@ -1,9 +1,7 @@
 import 'dart:async';
-
 import 'package:flutter/cupertino.dart';
 import 'package:hive/hive.dart';
 import 'package:jokes/features/domain/entities/joke_entity.dart';
-
 import 'db/jokes.dart';
 
 abstract class JokesLocalDataSource {
@@ -42,12 +40,11 @@ class JokesLocalDataSourceImpl implements JokesLocalDataSource {
       await hive.openBox('jokes');
     }
     final hiveBox = hive.box('jokes');
-    if(hiveBox.length>9)
-      {
-        debugPrint("deleting 0th index from DB");
-        await hiveBox.deleteAt(0);
-      }
-    Jokes j=Jokes(joke: jokeEntity.joke,dateTime: jokeEntity.dateTime);
+    if (hiveBox.length > 9) {
+      debugPrint("deleting 0th index from DB");
+      await hiveBox.deleteAt(0);
+    }
+    Jokes j = Jokes(joke: jokeEntity.joke, dateTime: jokeEntity.dateTime);
     hiveBox.add(j);
     return true;
   }

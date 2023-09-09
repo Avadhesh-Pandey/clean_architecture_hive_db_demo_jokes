@@ -9,9 +9,5 @@ class Jokes extends HiveObject {
   @HiveField(1)
   String? dateTime;
 
-
-  Jokes({
-    this.joke,
-    this.dateTime
-  });
+  Jokes({this.joke, this.dateTime});
 }

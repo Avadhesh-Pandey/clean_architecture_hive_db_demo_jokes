@@ -1,13 +1,10 @@
 import 'dart:async';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:jokes/core/constants/color_constants.dart';
 import 'package:jokes/features/domain/entities/joke_entity.dart';
-import 'package:jokes/features/presentation/bloc/auth_status/jokes_bloc.dart';
+import 'package:jokes/features/presentation/bloc/get_jokes_bloc/jokes_bloc.dart';
 import 'package:jokes/features/presentation/pages/home/widgets/jokes_list_page.dart';
 
 class HomeSubPage extends StatefulWidget {

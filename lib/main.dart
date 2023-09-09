@@ -9,8 +9,7 @@ import 'package:jokes/features/data/datasource/local/db/jokes.dart';
 import 'package:jokes/features/presentation/pages/home/home_main_page.dart';
 import 'package:path_provider/path_provider.dart' as path_provider;
 
-
-void main() async{
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await ScreenUtil.ensureScreenSize();
   // Init Dependency Inject
@@ -34,7 +33,8 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    ScreenUtil.init(context, designSize: const Size(360, 640),  minTextAdapt: true,  splitScreenMode: true);
+    ScreenUtil.init(context,
+        designSize: const Size(360, 640), minTextAdapt: true, splitScreenMode: true);
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -50,6 +50,5 @@ class MyApp extends StatelessWidget {
 }
 
 void _registerHiveAdapters() {
-  Hive
-    .registerAdapter(JokesAdapter());
+  Hive.registerAdapter(JokesAdapter());
 }

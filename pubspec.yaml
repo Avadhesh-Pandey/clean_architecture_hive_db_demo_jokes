@@ -37,8 +37,6 @@ dependencies:
   cupertino_icons: ^1.0.2
   # Functional programming thingies
   dartz: ^0.10.0-nullsafety.2
-  # Remote API
-  connectivity_plus: 3.0.2
   # Bloc for state management
   bloc: ^8.1.0
   flutter_bloc: ^8.1.1
