@@ -26,6 +26,9 @@ The project is built using clean architecture. It has 2 main directories
 - core
 - features
 
+![image](https://github.com/Avadhesh-Pandey/jokes/assets/42084941/d079796e-8193-4fd4-b73c-c72ec6796226)
+
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
